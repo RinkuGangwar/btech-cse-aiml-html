@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment 18
+        </title>
+        <style>
+            h1 {
+                background-color: blue;
+                text-align: center;
+                height: 150px;
+                line-height: 150px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #86c9cf;
+            }
+            fieldset {
+                border: 2px solid black;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            h4 {
+                text-align: center;
+                background-color: blue;
+                color: white;
+                height: 50px;
+                line-height: 50px;
+            }
+            label {
+                display: block;
+                width: 100px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> ABC College Admission 2026 </h1>
+        <h2> Courses and Fees </h2>
+        <table >
+            <tr>
+                <th> Course Name </th>
+                <th> Seats </th>
+                <th> Fees </th>
+            </tr>
+            <tr>
+                <td> B.Tech CSE </td>
+                <td> 120 </td>
+                <td> &#8377;90,000/- </td>
+            </tr>
+            <tr>
+                <td> BCA </td>
+                <td> 60 </td>
+                <td> &#8377;45,000/- </td>
+            </tr>
+        </table>
+        <fieldset>
+            <legend>Admission Form</legend>
+            <form>
+                <label for="name"> Name: </label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="course"> Course: </label>
+                <select id="course" name="course" deffault="B.Tech CSE" required>
+                    <option value="btech-cse">B.Tech CSE</option>
+                    <option value="bca">BCA</option>
+                </select><br><br>
+                <label for="Statement"> Statement: </label>
+                <textarea id="Statement" name="Statement" lines="5" columns="50" required></textarea><br><br>
+                <input type="submit" value="Apply">
+            </form>
+        </fieldset>
+        <h4> &copy; 2026 ABC College</h4>
+    </body>
+</html>
